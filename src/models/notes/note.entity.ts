@@ -9,4 +9,9 @@ export class NoteEntity {
     @Column()
     title: string;
 
+    @Column()
+    text_content: string;
+
+    @Column('boolean', {default: false})
+    isCompleted: boolean;
 }
